@@ -20,7 +20,7 @@ limitations under the License.
 
 # incrmmeanvar
 
-[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] [![dependencies][dependencies-image]][dependencies-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
 > Compute a moving [arithmetic mean][arithmetic-mean] and [unbiased sample variance][sample-variance] incrementally.
 
@@ -201,10 +201,10 @@ for ( i = 0; i < N; i++ ) {
 
 ## See Also
 
--   [`@stdlib/stats/incr/meanvar`][@stdlib/stats/incr/meanvar]: compute an arithmetic mean and unbiased sample variance incrementally.
--   [`@stdlib/stats/incr/mmean`][@stdlib/stats/incr/mmean]: compute a moving arithmetic mean incrementally.
--   [`@stdlib/stats/incr/mmeanstdev`][@stdlib/stats/incr/mmeanstdev]: compute a moving arithmetic mean and corrected sample standard deviation incrementally.
--   [`@stdlib/stats/incr/mvariance`][@stdlib/stats/incr/mvariance]: compute a moving unbiased sample variance incrementally.
+-   <span class="package-name">[`@stdlib/stats/incr/meanvar`][@stdlib/stats/incr/meanvar]</span><span class="delimiter">: </span><span class="description">compute an arithmetic mean and unbiased sample variance incrementally.</span>
+-   <span class="package-name">[`@stdlib/stats/incr/mmean`][@stdlib/stats/incr/mmean]</span><span class="delimiter">: </span><span class="description">compute a moving arithmetic mean incrementally.</span>
+-   <span class="package-name">[`@stdlib/stats/incr/mmeanstdev`][@stdlib/stats/incr/mmeanstdev]</span><span class="delimiter">: </span><span class="description">compute a moving arithmetic mean and corrected sample standard deviation incrementally.</span>
+-   <span class="package-name">[`@stdlib/stats/incr/mvariance`][@stdlib/stats/incr/mvariance]</span><span class="delimiter">: </span><span class="description">compute a moving unbiased sample variance incrementally.</span>
 
 </section>
 
@@ -255,8 +255,12 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/stats-incr-mmeanvar/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/stats-incr-mmeanvar?branch=main
 
+<!--
+
 [dependencies-image]: https://img.shields.io/david/stdlib-js/stats-incr-mmeanvar.svg
 [dependencies-url]: https://david-dm.org/stdlib-js/stats-incr-mmeanvar/main
+
+-->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
 [chat-url]: https://gitter.im/stdlib-js/stdlib/
