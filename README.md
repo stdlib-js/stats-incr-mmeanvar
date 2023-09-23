@@ -78,7 +78,7 @@ s^2 = \frac{1}{W-1} \sum_{i=0}^{W-1} ( x_i - \bar{x} )^2
 ## Usage
 
 ```javascript
-import incrmmeanvar from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-mmeanvar@deno/mod.js';
+import incrmmeanvar from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-mmeanvar@v0.1.0-deno/mod.js';
 ```
 
 #### incrmmeanvar( \[out,] window )
@@ -153,7 +153,7 @@ out = accumulator();
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
 import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
 import ArrayBuffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-buffer@deno/mod.js';
-import incrmmeanvar from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-mmeanvar@deno/mod.js';
+import incrmmeanvar from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-mmeanvar@v0.1.0-deno/mod.js';
 
 var offset;
 var acc;
