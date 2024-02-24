@@ -71,19 +71,32 @@ s^2 = \frac{1}{W-1} \sum_{i=0}^{W-1} ( x_i - \bar{x} )^2
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/stats-incr-mmeanvar
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import incrmmeanvar from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-mmeanvar@deno/mod.js';
-```
-The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/stats-incr-mmeanvar/tags). For example,
-
-```javascript
-import incrmmeanvar from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-mmeanvar@v0.2.0-deno/mod.js';
+var incrmmeanvar = require( '@stdlib/stats-incr-mmeanvar' );
 ```
 
 #### incrmmeanvar( \[out,] window )
@@ -97,7 +110,7 @@ var accumulator = incrmmeanvar( 3 );
 By default, the returned accumulator `function` returns the accumulated values as a two-element `array`. To avoid unnecessary memory allocation, the function supports providing an output (destination) object.
 
 ```javascript
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
+var Float64Array = require( '@stdlib/array-float64' );
 
 var accumulator = incrmmeanvar( new Float64Array( 2 ), 3 );
 ```
@@ -155,10 +168,10 @@ out = accumulator();
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
-import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@deno/mod.js';
-import ArrayBuffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-buffer@deno/mod.js';
-import incrmmeanvar from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-mmeanvar@deno/mod.js';
+var randu = require( '@stdlib/random-base-randu' );
+var Float64Array = require( '@stdlib/array-float64' );
+var ArrayBuffer = require( '@stdlib/array-buffer' );
+var incrmmeanvar = require( '@stdlib/stats-incr-mmeanvar' );
 
 var offset;
 var acc;
@@ -235,7 +248,7 @@ for ( i = 0; i < N; i++ ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -265,8 +278,8 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/stats-incr-mmeanvar.svg
 [npm-url]: https://npmjs.org/package/@stdlib/stats-incr-mmeanvar
 
-[test-image]: https://github.com/stdlib-js/stats-incr-mmeanvar/actions/workflows/test.yml/badge.svg?branch=v0.2.0
-[test-url]: https://github.com/stdlib-js/stats-incr-mmeanvar/actions/workflows/test.yml?query=branch:v0.2.0
+[test-image]: https://github.com/stdlib-js/stats-incr-mmeanvar/actions/workflows/test.yml/badge.svg?branch=v0.2.1
+[test-url]: https://github.com/stdlib-js/stats-incr-mmeanvar/actions/workflows/test.yml?query=branch:v0.2.1
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/stats-incr-mmeanvar/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/stats-incr-mmeanvar?branch=main
@@ -304,13 +317,13 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/stats/incr/meanvar]: https://github.com/stdlib-js/stats-incr-meanvar/tree/deno
+[@stdlib/stats/incr/meanvar]: https://github.com/stdlib-js/stats-incr-meanvar
 
-[@stdlib/stats/incr/mmean]: https://github.com/stdlib-js/stats-incr-mmean/tree/deno
+[@stdlib/stats/incr/mmean]: https://github.com/stdlib-js/stats-incr-mmean
 
-[@stdlib/stats/incr/mmeanstdev]: https://github.com/stdlib-js/stats-incr-mmeanstdev/tree/deno
+[@stdlib/stats/incr/mmeanstdev]: https://github.com/stdlib-js/stats-incr-mmeanstdev
 
-[@stdlib/stats/incr/mvariance]: https://github.com/stdlib-js/stats-incr-mvariance/tree/deno
+[@stdlib/stats/incr/mvariance]: https://github.com/stdlib-js/stats-incr-mvariance
 
 <!-- </related-links> -->
 
