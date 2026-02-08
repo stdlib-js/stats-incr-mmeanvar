@@ -78,6 +78,11 @@ s^2 = \frac{1}{W-1} \sum_{i=0}^{W-1} ( x_i - \bar{x} )^2
 ## Usage
 
 ```javascript
+import incrmmeanvar from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-mmeanvar@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/stats-incr-mmeanvar/tags). For example,
+
+```javascript
 import incrmmeanvar from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-mmeanvar@v0.2.3-esm/index.mjs';
 ```
 
@@ -158,7 +163,7 @@ out = accumulator();
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
 import Float64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float64@esm/index.mjs';
 import ArrayBuffer from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-buffer@esm/index.mjs';
-import incrmmeanvar from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-mmeanvar@v0.2.3-esm/index.mjs';
+import incrmmeanvar from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-mmeanvar@esm/index.mjs';
 
 var offset;
 var acc;
